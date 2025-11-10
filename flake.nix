@@ -1,5 +1,5 @@
 {
-  description = "agonrec.com Website Flake";
+  description = "Rave_Space Website";
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";

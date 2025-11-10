@@ -23,7 +23,7 @@
         devenv = {
           shells = {
             default = {
-              name = "agonrec.com";
+              name = "Rave_Space";
               languages = {
                 javascript = {
                   enable = true;

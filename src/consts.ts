@@ -1,15 +1,15 @@
 export const SITE = {
-  URL: "https://your_site.com",
-  TITLE: "Mono Lume",
+  URL: "https://rave_space.com",
+  TITLE: "RAVE_SPACE",
   DESCRIPTION:
-    "A full-stack developer with a strong focus on building fast, accessible, and maintainable web applications.",
-  EMAIL: "hi@monolume.com",
+    "FIND UR SCENE JOIN THE STREAM",
+  EMAIL: "hi@rave_space.com",
 };
 
 export const HOME = {
   TITLE: "Home",
   DESCRIPTION:
-    "A personal blog about coding, building projects, and figuring things out",
+    "Host your next party, rave, live show, or XR experience online. Rave_Space is an independent virtual createor performance plaform",
 };
 
 export const BLOG = {
@@ -18,23 +18,27 @@ export const BLOG = {
     "A collection of articles on programming, projects and other stuff",
 };
 
-export const PROJECTS = {
-  TITLE: "Projects",
+export const SPACES = {
+  TITLE: "PLUR.CLUB",
   DESCRIPTION:
-    "A collection of my projects with links to repositories and live demos.",
+    "LIVE XR experiences from top creators across the globe.",
 };
 
 export const SOCIALS = [
   {
     NAME: "X",
-    HREF: "https://x.com/your_username",
+    HREF: "https://x.com/rave_space",
+  },
+  {
+    NAME: "Instagram",
+    HREF: "https://instagram.com/rave_space",
+  },
+  {
+    NAME: "Facebook",
+    HREF: "https://facebook.com/rave_space",
   },
   {
     NAME: "Linkedin",
-    HREF: "https://linkedin.com/",
-  },
-  {
-    NAME: "Github",
-    HREF: "https://github.com/your_username",
+    HREF: "https://linkedin.com/rave_space",
   },
 ];

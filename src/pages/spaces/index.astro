@@ -1,0 +1,18 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Card from "@components/Card.astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import { SPACES } from "@consts";
+
+const allSpaces: CollectionEntry<"spaces">[] =
+  await getCollection("spaces");
+---
+
+<Layout title={SPACES.TITLE} description={SPACES.DESCRIPTION}>
+  <section id="Spaces" class="container mx-auto px-6 pt-18">
+    <h2 class="heading text-5xl md:text-9xl uppercase mr-4 md:mr-8 my-8">
+      Spaces
+    </h2>
+    {allSpaces.map((space) => <Card entry={space} />)}
+  </section>
+</Layout>

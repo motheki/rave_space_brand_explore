@@ -2,8 +2,8 @@
 import { SITE, SOCIALS } from "@consts";
 import { getCollection, type CollectionEntry } from "astro:content";
 
-const Projects: CollectionEntry<"projects">[] = (
-  await getCollection("projects")
+const Spaces: CollectionEntry<"spaces">[] = (
+  await getCollection("spaces")
 ).slice(0, 3);
 ---
 
@@ -13,24 +13,24 @@ const Projects: CollectionEntry<"projects">[] = (
   >
     <h2 class="text-5xl lg:text-9xl uppercase">{SITE.TITLE}</h2>
     <p class="text-2xl lg:text-3xl max-w-[760px]">
-      Simplicity is the ultimate sophistication — especially in code.
+      FIND UR SCENE JOIN THE STREAM.
     </p>
   </div>
   <div class="flex flex-col sm:flex-row sm:flex-wrap justify-between gap-10">
     <div>
-      <h3 class="mb-2 text-xl">Contact</h3>
-      <ul>
-        <li><a href="mailto:someone@example.com">{SITE.EMAIL}</a></li>
+      <h3 class="mb-2 text-xl">Support</h3>
+      <ul class="space-y-1 text-secondary">
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/legal">Legal</a></li>
       </ul>
     </div>
     <div>
-      <h3 class="mb-2 text-xl">Navigation</h3>
+      <h3 class="mb-2 text-xl">Tools</h3>
       <ul class="space-y-1 text-secondary">
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
         <li><a href="/blog">Blog</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="/Development">Development</a></li>
+        <li><a href="/lfx">LFX</a></li>
+        <li><a href="/stage-xr">Stage XR</a></li>
       </ul>
     </div>
     <div>
@@ -46,12 +46,12 @@ const Projects: CollectionEntry<"projects">[] = (
       </ul>
     </div>
     <div>
-      <h3 class="mb-2 text-xl">Projects</h3>
+      <h3 class="mb-2 text-xl">Spaces</h3>
       <ul class="space-y-1 text-secondary">
         {
-          Projects.map((project) => (
+          Spaces.map((space) => (
             <li>
-                <a href=`/projects/${project.id}`>{project.data.title}</a>
+                <a href=`/spacess/${space.id}`>{space.data.title}</a>
             </li>
           ))
         }
@@ -59,6 +59,6 @@ const Projects: CollectionEntry<"projects">[] = (
     </div>
   </div>
   <span class="block text-center text-sm opacity-70">
-    © {SITE.TITLE}. Built with Astro
+    © {SITE.TITLE}
   </span>
 </footer>

@@ -12,15 +12,20 @@
     "format": "oxfmt"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.5.1",
-    "@tailwindcss/typography": "^0.5.16",
-    "@tailwindcss/vite": "^4.1.13",
-    "astro": "^5.13.5",
-    "tailwindcss": "^4.1.13"
+    "@astrojs/sitemap": "latest",
+    "@tailwindcss/typography": "latest",
+    "@tailwindcss/vite": "latest",
+    "astro": "latest",
+    "tailwindcss": "latest"
   },
   "devDependencies": {
-    "@typescript/native-preview": "^7.0.0-dev.20251109.1",
+    "@typescript/native-preview": "latest",
     "oxfmt": "^0.11.0",
     "oxlint": "^1.26.0"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@latest",
+    "react": "npm:@preact/compat@latest",
+		"react-dom": "npm:@preact/compat@latest"
   }
 }

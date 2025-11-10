@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
-@plugin '@tailwindcss/typography';
-
-@theme {
+@theme inline {
   /* fonts */
-  --font-plex: "IBM Plex Mono", monospace;
-  --font-geist: "Geist", sans-serif;
+  --font-gas: var(--font-gasoek);
+  --font-mart: var(--font-martian);
 
   /* colors */
   --color-primary: oklch(86.89 0.29 142.02); /* #27FF0B*/
@@ -15,7 +13,7 @@
 }
 
 .heading {
-  @apply font-plex tracking-[-2%] font-bold;
+  @apply font-gas tracking-[-2%] font-bold;
 }
 
 html {
@@ -23,11 +21,8 @@ html {
 }
 
 body {
-  @apply font-geist text-foreground bg-background;
+  @apply font-mart text-foreground bg-background;
 }
 
 article {
-  @apply prose prose-neutral prose-img:mx-auto prose-img:my-auto text-lg leading-8;
-  @apply prose-headings:font-bold prose-headings:font-plex prose-headings:text-foreground mx-auto;
-  @apply text-secondary prose-a:underline-offset-2;
 }

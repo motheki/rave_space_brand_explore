@@ -1,10 +1,12 @@
 ---
 import { SITE } from "@consts";
+import { Picture } from 'astro:assets';
+import Logo from '../assets/logo.png'
 
 const links = [
   { name: "Home", href: "/", target: "_self" },
   { name: "About", href: "/about", target: "_self" },
-  { name: "Work", href: "/projects", target: "_self" },
+  { name: "Spaces", href: "/spaces", target: "_self" },
   { name: "Blog", href: "/blog", target: "_self" },
   { name: "Contact", href: "/contact", target: "_self" },
 ];
@@ -12,9 +14,7 @@ const links = [
 
 <header class="fixed top-0 w-full z-50">
   <div class="container mx-auto flex items-center justify-between p-6">
-    <a href="/" class="font-bold font-plex text-4xl"
-      >{SITE.TITLE.toUpperCase().charAt(0)}.</a
-    >
+    <Picture src ={Logo} formats={['avif', 'webp', 'png']} alt="Rave_Space Company Logo"layout='constrained' width={50} height={50} />
     <nav class="space-x-3 text-secondary hidden md:block">
       {
         links.map((link) => (
